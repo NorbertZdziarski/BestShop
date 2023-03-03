@@ -207,6 +207,12 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
+    position: relative;
+}
+.box1_images {
+    position: absolute;
+    left:50%;
+    image-resolution: 2;
 }
 .box1_logo {
     width: 6.2rem;
