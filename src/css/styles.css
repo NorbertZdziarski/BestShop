@@ -1,0 +1,15 @@
+:root {
+    --color_background:#FFFFFF;
+    --color_logo:#08A6E4;
+    --color_background-secondary:#E8E9ED ;
+    --color_1:#FB3B64;
+    --color_2:#08A6E4;
+    --color_3:#55DFB4;
+    --color_text_main:#000000;
+    --color_text_secondary:#A5A5A5;
+}
+
+body {
+    background-color: var(--color_background);
+    margin: 0;
+}
