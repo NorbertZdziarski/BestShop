@@ -212,7 +212,7 @@ body {
 .box1_images {
     position: absolute;
     left:50%;
-    image-resolution: 2;
+
 }
 .box1_logo {
     width: 6.2rem;
@@ -267,10 +267,21 @@ body {
     justify-content: space-around;
     border: 1px solid #E8E9ED;
 }
-
+.content2__box-img {
+    background-color: #55DFB4;
+    rotate: none;
+}
 .content2__box--item {
 
     max-width: 44rem;
+}
+
+.content2__box_symbol {
+    width: 5rem;
+    height: 5rem;
+    rotate: 45deg;
+    background-color: #EB476E;
+    border-radius: 1rem;
 }
 
 .div__line_color1 {
@@ -464,7 +475,7 @@ body {
  /*          --------------------------------- stopka ----------------------- */
 .footer {
     background-color: #F7F7F7;
-    box-shadow: 0px -5px 40px #00000029;
+    box-shadow: 0 -5px 40px #00000029;
 
 }
 .footer__wrapper {
@@ -499,4 +510,46 @@ body {
     width: 2.4rem;
     height: 2.4rem;
     margin-left: 2rem;
+}
+
+.feature {
+    list-style: none;
+    padding-left: 0;
+    font-size: 14px;
+
+}
+
+.feature .feature__icon {
+    position: relative;
+}
+.feature .feature__item {
+    color: black;
+    margin-bottom: 25px;
+
+}
+
+.feature .feature__icon::before {
+    content: '';
+    position: absolute;
+    width: 11px;
+    height: 11px;
+    left: -18px;
+    transform: translateY(-50%);
+    top: 50%;
+    background-image: url("../images/Checkmark.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 90%;
+    border: 1px solid #55DFB4;
+    border-radius: 2px;
+}
+
+.feature .feature__item.feature__item--not .feature__icon::before {
+    background-image: none;
+    content: 'x';
+    font-size: 9px;
+    line-height: 10px;
+    color: #EB476E;
+    border-color: #EB476E;
+
 }
